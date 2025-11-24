@@ -1,10 +1,10 @@
 'use client';
 import { useState, useEffect } from 'react';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import DonorCard from '@/components/DonorCard';
-import { User } from '@/types';
-import { getAllDonors } from '@/lib/firestore';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import DonorCard from '../../components/DonorCard';
+import { User } from '../../types';
+import { getAllDonors } from '../../lib/firestore';
 
 export default function DonorsPage() {
   const [donors, setDonors] = useState<User[]>([]);
