@@ -7,9 +7,9 @@ import {
   signOut,
   onAuthStateChanged
 } from 'firebase/auth';
-import { auth } from '@/lib/firebase';
-import { User } from '@/types';
-import { getUser } from '@/lib/firestore';
+import { auth } from '../lib/firebase';
+import { User } from '../types';
+import { getUser } from '../lib/firestore';
 
 interface AuthContextType {
   currentUser: FirebaseUser | null;
