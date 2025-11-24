@@ -1,9 +1,9 @@
 'use client';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import { getAppConfig } from '@/lib/firestore';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import { getAppConfig } from '../lib/firestore';
 
 export default function Home() {
   const [heroQuote, setHeroQuote] = useState('রক্তদান জীবনদান - একটি রক্ত অনেকগুলো জীবন বাঁচাতে পারে');
