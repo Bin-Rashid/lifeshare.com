@@ -1,8 +1,8 @@
 'use client';
-import { User } from '@/types';
-import { useAuth } from '@/context/AuthContext';
+import { User } from '../types';
+import { useAuth } from '../context/AuthContext';
 import { useState } from 'react';
-import { deleteUser } from '@/lib/firestore';
+import { deleteUser } from '../lib/firestore';
 import toast from 'react-hot-toast';
 
 interface DonorCardProps {
