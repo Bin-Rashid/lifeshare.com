@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
-import { useAuth } from '@/context/AuthContext';
-import { updateUser, uploadFile } from '@/lib/firestore';
+import { useAuth } from '../context/AuthContext';
+import { updateUser, convertToBase64 } from '../lib/firestore';
 import { useRouter } from 'next/navigation';
 import toast from 'react-hot-toast';
 
