@@ -10,9 +10,8 @@ import {
   where,
   orderBy 
 } from 'firebase/firestore';
-import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
-import { db, storage } from './firebase';
-import { User, AppConfig } from '@/types';
+import { db } from './firebase';
+import { User, AppConfig } from '../types';
 
 // User operations
 export const createUser = async (userData: Omit<User, 'uid' | 'createdAt'>) => {
