@@ -1,12 +1,12 @@
 'use client';
 import { useState, useEffect } from 'react';
-import { useAuth } from '@/context/AuthContext';
+import { useAuth } from '../../context/AuthContext';
 import { useRouter } from 'next/navigation';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import DonorCard from '@/components/DonorCard';
-import { User, AppConfig } from '@/types';
-import { getAllDonors, updateUser, getAppConfig, updateAppConfig } from '@/lib/firestore';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import DonorCard from '../../components/DonorCard';
+import { User, AppConfig } from '../../types';
+import { getAllDonors, updateUser, getAppConfig, updateAppConfig } from '../../lib/firestore';
 import toast from 'react-hot-toast';
 
 export default function AdminPanel() {
